@@ -1,0 +1,13 @@
+{
+  "name": "bio-tools",
+  "version": "1.0.0",
+  "description": "Just some tools",
+  "repository": "https://github.com/UnskilledWolf/bio-tools.git",
+  "author": "Unskilled Wolf",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  },
+  "scripts": {
+    "sass": "sass --watch sass/:public/css/ --style compressed --no-source-map"
+  }
+}
