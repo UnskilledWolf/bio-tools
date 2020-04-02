@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/public/codons.js"></script>
     <title>Unskilled's Bio Tools | Index</title>
 </head>
 
@@ -180,6 +181,39 @@
     </div>
 
     <!-- End Content -->
+
+    <script>
+
+        var last = null;
+
+        document.getElementById("main-input").addEventListener("keyup", (e) =>
+        {
+            if (e.keyCode === 13)
+            {
+                //Get the codon from list
+                const combination = e.target.value.toUpperCase()
+                const codon = codons[combination]
+                if (codon)
+                {//Remove last color
+                    if (last)
+                        document.getElementById(last).style.backgroundColor = "rgba(0,0,0,0)";
+
+                    last = combination
+
+                    //Color
+                    document.getElementById(combination).style.backgroundColor = "red";
+                }
+                else
+                {
+                    if (last)
+                        document.getElementById(last).style.backgroundColor = "rgba(0,0,0,0)";
+
+                    last = null
+                }
+            }
+        });
+
+    </script>
 
     <footer>
         <p class="footer-text">© Unskilled Wolf</p>
