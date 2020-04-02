@@ -56,8 +56,15 @@ footer {
     }
 }
 
+h1 {
+    text-align: center;
+}
+
+.wrap {
+    margin: 0 4rem 0.5rem 4rem;
+}
+
 // Navbar
-//Navbar
 .nav-bar {
     z-index: 5;
     top: 0;
@@ -206,5 +213,26 @@ footer {
         to {
             visibility: hidden;
         }
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 550px) {
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .wraper {
+        padding: 0;
+    }
+
+    .nav-side {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .nav-side {
+        width: 80%;
     }
 }
