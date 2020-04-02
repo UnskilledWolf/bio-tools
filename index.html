@@ -4,11 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Unskilled's Bio Tools | Index</title>
 </head>
 
 <body>
+    <div class="nav-bar">
+        <div class="nav-center">
+            <div class="nav-content">
+                <div class="menu" style="order: 1" id="nav-open">
+                    <!-- https://material.io/resources/icons/ -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                </div>
+                <h1 style="order: 2" id="nav-title">Unskilled's Bio Tools</h1>
+            </div>
+        </div>
+    </div>
+    <div class="nav-darken closed" id="nav-close"></div>
+    <div class="nav-side closed" id="nav-main">
+        <div class="nav-content">
+            <!-- <a href="/view" style="order: 1"><img src="/Icon.png" alt="ICN"></a> -->
+            <div class="nav-title">
+                <h2>Smol Viewer</h2>
+            </div>
+            <ul class="nav-list" id="nav-link-list">
+                <li data-name="index.html">
+                    <a href="/" style="order: 1">Home</a>
+                </li>
+            </ul>
+        </div>
+        <script src="/public/navBar.js"></script>
+    </div>
 
+    <!-- Begin Content -->
+
+    <!-- End Content -->
+
+    <footer>
+        <p class="footer-text">© Unskilled Wolf</p>
+    </footer>
 </body>
 
 </html>
