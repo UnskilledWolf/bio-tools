@@ -64,3 +64,27 @@ const codons = {
     GGA: "Gly",
     GGG: "Gly"
 }
+
+const realNames = {
+    phe: "Phenylalanine",
+    leu: "Leucine",
+    ile: "Isoleucine",
+    met: "Methionine",
+    val: "Valine",
+    ser: "Serine",
+    pro: "Proline",
+    thr: "Threonine",
+    ala: "Alanine",
+    tyr: "Tyrosine",
+    stop: "Stop",
+    his: "Histidine",
+    gln: "Glutamine",
+    asn: "Asparagine",
+    lys: "Lysine",
+    asp: "Aspartic acid",
+    glu: "Glutamic acid",
+    cys: "Cysteine",
+    trp: "Tryptophan",
+    arg: "Arginine",
+    gly: "Glycine"
+}

@@ -217,10 +217,39 @@ h1 {
 }
 
 // Codon Table
-table {
+#codon-table {
     border-collapse: collapse;
     td {
-        border: solid black 1px;
+        border: solid $primary-dark 1px;
+    }
+
+    tr:nth-child(1) td:nth-child(2) {
+        text-align: center;
+    }
+
+    tr {
+        td:first-child,
+        td:last-child {
+            text-align: center;
+        }
+    }
+
+    tr:nth-child(2),
+    tr:nth-child(6),
+    tr:nth-child(10),
+    tr:nth-child(14) {
+        border-bottom: solid $primary 2px;
+    }
+
+    tr:nth-child(3),
+    tr:nth-child(7),
+    tr:nth-child(11),
+    tr:nth-child(15) {
+        border-top: solid $primary 2px;
+    }
+
+    .selected {
+        background-color: $primary-light;
     }
 }
 

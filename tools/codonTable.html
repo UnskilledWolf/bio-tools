@@ -49,7 +49,8 @@
         <h1>Interactive Codon Table</h1>
         <p>Type amino acid combination</p>
         <input type="text" id="main-input">
-        <table>
+        <p id="real-name"></p>
+        <table id="codon-table">
             <tr>
                 <td rowspan="2">1st</td>
                 <td colspan="4">2nd</td>
@@ -196,19 +197,25 @@
                 if (codon)
                 {//Remove last color
                     if (last)
-                        document.getElementById(last).style.backgroundColor = "rgba(0,0,0,0)";
+                        document.getElementById(last).classList.remove("selected")
 
                     last = combination
 
                     //Color
-                    document.getElementById(combination).style.backgroundColor = "red";
+                    document.getElementById(combination).classList.add("selected")
+
+                    //Text
+                    document.getElementById("real-name").innerHTML = `${codon} (${realNames[codon.toLowerCase()]})`
                 }
                 else
                 {
                     if (last)
-                        document.getElementById(last).style.backgroundColor = "rgba(0,0,0,0)";
+                        document.getElementById(last).classList.remove("selected")
 
                     last = null
+
+                    //Set Text
+                    document.getElementById("real-name").innerHTML = ""
                 }
             }
         });
