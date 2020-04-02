@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Unskilled's Bio Tools | Index</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-center">
+            <div class="nav-content">
+                <div class="menu" style="order: 1" id="nav-open">
+                    <!-- https://material.io/resources/icons/ -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                </div>
+                <h1 style="order: 2" id="nav-title">Unskilled's Bio Tools</h1>
+            </div>
+        </div>
+    </div>
+    <div class="nav-darken closed" id="nav-close"></div>
+    <div class="nav-side closed" id="nav-main">
+        <div class="nav-content">
+            <div class="nav-title">
+                <h2>Unskilled's Bio Tools</h2>
+            </div>
+            <ul class="nav-list" id="nav-link-list">
+                <li data-name="index.html">
+                    <a href="/" style="order: 1">Home</a>
+                </li>
+                <li data-name="codonTable.html">
+                    <a href="/tools/codonTable.html" style="order: 1">Interactive Codon Table</a>
+                </li>
+            </ul>
+        </div>
+        <script src="/public/navBar.js"></script>
+    </div>
+
+    <!-- Begin Content -->
+
+    <div class="wrap">
+        <h1>Interactive Codon Table</h1>
+        <p>Type amino acid combination</p>
+        <input type="text" id="main-input">
+        <table>
+            <tr>
+                <td rowspan="2">1st</td>
+                <td colspan="4">2nd</td>
+                <td rowspan="2">3rd</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>C</td>
+                <td>A</td>
+                <td> G</td>
+            </tr>
+            <tr>
+                <td rowspan="4">U</td>
+                <td id=UUU>Phe</td>
+                <td id=UCU>Ser</td>
+                <td id=UAU>Tyr</td>
+                <td id=UGU>Cys</td>
+                <td>U</td>
+            </tr>
+            <tr>
+                <td id=UUC>Phe</td>
+                <td id=UCC>Ser</td>
+                <td id=UAC>Tyr</td>
+                <td id=UGC>Cys</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td id=UUA>Leu</td>
+                <td id=UCA>Ser</td>
+                <td id=UAA>Stop</td>
+                <td id=UGA>Stop</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td id=UUG>Leu</td>
+                <td id=UCG>Ser</td>
+                <td id=UAG>Stop</td>
+                <td id=UGG>Trp</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td id=CUU>Leu</td>
+                <td id=CCU>Pro</td>
+                <td id=CAU>His</td>
+                <td id=CGU>Arg</td>
+                <td>U</td>
+            </tr>
+            <tr>
+                <td id=CUC>Leu</td>
+                <td id=CCC>Pro</td>
+                <td id=CAC>His</td>
+                <td id=CGC>Arg</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td id=CUA>Leu</td>
+                <td id=CCA>Pro</td>
+                <td id=CAA>Gln</td>
+                <td id=CGA>Arg</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td id=CUG>Leu</td>
+                <td id=CCG>Pro</td>
+                <td id=CAG>Gln</td>
+                <td id=CGG>Arg</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td rowspan="4">A</td>
+                <td id=AUU>Ile</td>
+                <td id=ACU>Thr</td>
+                <td id=AAU>Asn</td>
+                <td id=AGU>Ser</td>
+                <td>U</td>
+            </tr>
+            <tr>
+                <td id=AUC>Ile</td>
+                <td id=ACC>Thr</td>
+                <td id=AAC>Asn</td>
+                <td id=AGC>Ser</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td id=AUA>Ile</td>
+                <td id=ACA>Thr</td>
+                <td id=AAA>Lys</td>
+                <td id=AGA>Arg</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td id=AUG>Met</td>
+                <td id=ACG>Thr</td>
+                <td id=AAG>Lys</td>
+                <td id=AGG>Arg</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td rowspan="4">G</td>
+                <td id=GUU>Val</td>
+                <td id=GCU>Ala</td>
+                <td id=GAU>Asp</td>
+                <td id=GGU>Gly</td>
+                <td>U</td>
+            </tr>
+            <tr>
+                <td id=GUC>Val</td>
+                <td id=GCC>Ala</td>
+                <td id=GAC>Asp</td>
+                <td id=GGC>Gly</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td id=GUA>Val</td>
+                <td id=GCA>Ala</td>
+                <td id=GAA>Glu</td>
+                <td id=GGA>Gly</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td id=GUG>Val</td>
+                <td id=GCG>Ala</td>
+                <td id=GAG>Glu</td>
+                <td id=GGG>Gly</td>
+                <td>G</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- End Content -->
+
+    <footer>
+        <p class="footer-text">© Unskilled Wolf</p>
+    </footer>
+</body>
+
+</html>

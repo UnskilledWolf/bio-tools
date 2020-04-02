@@ -216,6 +216,14 @@ h1 {
     }
 }
 
+// Codon Table
+table {
+    border-collapse: collapse;
+    td {
+        border: solid black 1px;
+    }
+}
+
 //Mobile
 @media only screen and (max-width: 550px) {
     body {
